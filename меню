@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Донат | Minecraft Сервер "Название"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Minecraft Сервер <span class="server-name">"Название"</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О сервере</a></li>
+                <li><a href="#donate">Донат</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Добро пожаловать на наш сервер!</h2>
+        <p>IP: <strong>mc.yourserver.com</strong></p>
+        <p>Версия: <strong>1.20.1</strong></p>
+    </section>
+
+    <section id="donate">
+        <h2>Привилегии</h2>
+        <div class="donate-tiers">
+            <div class="tier">
+                <h3>VIP</h3>
+                <p class="price">299 ₽</p>
+                <ul>
+                    <li>Цветной ник</li>
+                    <li>Доступ к /hat</li>
+                    <li>Префикс в чате</li>
+                </ul>
+                <button class="donate-btn">Купить</button>
+            </div>
+            <div class="tier">
+                <h3>Premium</h3>
+                <p class="price">599 ₽</p>
+                <ul>
+                    <li>Всё из VIP +</li>
+                    <li>Доступ к /fly</li>
+                    <li>Эффекты скорости</li>
+                </ul>
+                <button class="donate-btn">Купить</button>
+            </div>
+            <div class="tier">
+                <h3>Legend</h3>
+                <p class="price">999 ₽</p>
+                <ul>
+                    <li>Всё из Premium +</li>
+                    <li>Личный варп</li>
+                    <li>Эксклюзивные предметы</li>
+                </ul>
+                <button class="donate-btn">Купить</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment">
+        <h2>Оплата</h2>
+        <form class="payment-form">
+            <label>Ваш ник в Minecraft:</label>
+            <input type="text" placeholder="Ник" required>
+            
+            <label>Выберите привилегию:</label>
+            <select required>
+                <option value="">-- Выберите --</option>
+                <option value="vip">VIP (299 ₽)</option>
+                <option value="premium">Premium (599 ₽)</option>
+                <option value="legend">Legend (999 ₽)</option>
+            </select>
+            
+            <label>Способ оплаты:</label>
+            <div class="payment-methods">
+                <label><input type="radio" name="method" checked> Qiwi</label>
+                <label><input type="radio" name="method"> PayPal</label>
+                <label><input type="radio" name="method"> Карта</label>
+            </div>
+            
+            <button type="submit" class="pay-btn">Перейти к оплате</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>По вопросам: <a href="https://t.me/yourcontact">@ваш_контакт</a></p>
+        <p>© 2024 Minecraft Сервер "Название"</p>
+    </footer>
+</body>
+</html>
